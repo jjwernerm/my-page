@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -10,14 +12,48 @@ const user = {
   imageUrl: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1685731147/myPhoto_xjobbg.png',
 }
 const navigation = [
-  { icon: <FontAwesomeIcon icon={faHouseChimney} />, gap: ' ', name: 'Inicio', href: '#', current: false },
-  { icon: <FontAwesomeIcon icon={faUser} />, gap: ' ', name: 'Sobre Mí', href: '#', current: false },
-  { icon: <FontAwesomeIcon icon={faSuitcase} />, gap: ' ', name: 'Portafolio', href: '#', current: false },
-  { icon: <FontAwesomeIcon icon={faEnvelope} />, gap: ' ', name: 'Contacto', href: '#', current: false },
+  {
+    icon: <FontAwesomeIcon icon={faHouseChimney} />, 
+    gap: ' ', 
+    name: 'Inicio', 
+    href: '/', 
+    current: false
+  },
+  { 
+    icon: <FontAwesomeIcon icon={faUser} />, 
+    gap: ' ', 
+    name: 'Sobre Mí', 
+    href: '/About', 
+    current: false
+  },
+  { 
+    icon: <FontAwesomeIcon icon={faSuitcase} />, 
+    gap: ' ', 
+    name: 'Portafolio', 
+    href: '/Portfolio', 
+    current: false
+  },
+  { 
+    icon: <FontAwesomeIcon icon={faEnvelope} />, 
+    gap: ' ', 
+    name: 'Contacto', 
+    href: '/Contact', 
+    current: false
+  },
 ]
 const userNavigation = [
-  { icon: <FontAwesomeIcon icon={faBlog} />, gap: ' ', name: 'Blog', href: '#' },
-  { icon: <FontAwesomeIcon icon={faClipboard} />, gap: ' ', name: 'Descargar CV', href: '#' },
+  { 
+    icon: <FontAwesomeIcon icon={faBlog} />, 
+    gap: ' ', 
+    name: 'Blog', 
+    href: '/Blog' 
+  },
+  { 
+    icon: <FontAwesomeIcon icon={faClipboard} />, 
+    gap: ' ', 
+    name: 'Descargar CV', 
+    href: 'https://drive.google.com/file/d/1D6LUxy6Jf_bU7ZhK62MqDn_HrATOVz3m/view?usp=sharing'
+  },
 ]
 
 function classNames(...classes) {
@@ -25,6 +61,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  
   return (
     <>
       <div className="min-h-full">
@@ -44,21 +81,19 @@ export default function Navbar() {
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
+                          <NavLink
                             key={item.name}
-                            href={item.href}
+                            to={item.href}
                             className={classNames(
-                              item.current
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium'
+                              item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'block rounded-md px-3 py-2 text-base font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
                             {item.icon}
                             {item.gap}
                             {item.name}
-                          </a>
+                          </NavLink>
                         ))}
                       </div>
                     </div>
@@ -94,7 +129,7 @@ export default function Navbar() {
                                       active ? 'bg-gray-100' : '',
                                       'block px-4 py-2 text-sm text-gray-700'
                                     )}
-                                  >
+                                    target="_blank">
                                     {item.icon}
                                     {item.gap}
                                     {item.name}
@@ -159,7 +194,7 @@ export default function Navbar() {
                         as="a"
                         href={item.href}
                         className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
-                      >
+                        target="_blank">
                         {item.icon}
                         {item.gap}
                         {item.name}
