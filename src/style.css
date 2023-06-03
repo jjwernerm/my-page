@@ -1,0 +1,11 @@
+.min-h-navbar {
+  min-height: 10vh;
+}
+
+.min-h-views {
+  min-height: 65vh;
+}
+
+.min-h-footer {
+  min-height: 25vh;
+}

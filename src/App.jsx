@@ -11,6 +11,8 @@ import Portfolio from './views/Portfolio';
 import Contact from './views/Contact';
 import Blog from './views/Blog';
 
+import './style.css'
+
 function App() {
 
   return (

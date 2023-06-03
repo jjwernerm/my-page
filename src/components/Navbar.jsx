@@ -64,7 +64,7 @@ export default function Navbar() {
   
   return (
     <>
-      <div className="min-h-full">
+      <div className="min-h-navbar">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
             <>
@@ -73,7 +73,7 @@ export default function Navbar() {
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <img
-                        className="h-8 w-8"
+                        className="h-12 w-12"
                         src="https://res.cloudinary.com/dqjnzfsp6/image/upload/v1685731491/logoJoa_urelec.png"
                         alt="My Logo"
                       />
