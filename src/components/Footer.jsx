@@ -8,7 +8,7 @@ function Footer() {
       <div className="bg-gray-800 flex flex-col items-center min-h-footer">
         <img
           className="h-24 w-24"
-          src="https://res.cloudinary.com/dqjnzfsp6/image/upload/v1685731491/logoJoa_urelec.png"
+          src="https://res.cloudinary.com/dqjnzfsp6/image/upload/v1686012371/logoJoa-_hbupyw.png"
           alt="My Logo"
         />
         <div className="text-gray-800 w-full flex justify-center gap-5 mb-5">

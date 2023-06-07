@@ -1,11 +1,20 @@
 .min-h-navbar {
-  min-height: 10vh;
+  min-height: 7vh;
 }
 
 .min-h-views {
-  min-height: 65vh;
+  min-height: 67vh;
+  background-color: #1F2937; /* Gray 800 */
 }
 
 .min-h-footer {
-  min-height: 25vh;
+  min-height: 26vh;
 }
+
+/*** component Home ***/
+
+.my-name {
+  text-shadow: 5px 3px 3px #334155; /* Slate 700 */
+}
+
+

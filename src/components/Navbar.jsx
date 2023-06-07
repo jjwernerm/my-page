@@ -74,7 +74,7 @@ export default function Navbar() {
                     <div className="flex-shrink-0">
                       <img
                         className="h-12 w-12"
-                        src="https://res.cloudinary.com/dqjnzfsp6/image/upload/v1685731491/logoJoa_urelec.png"
+                        src="https://res.cloudinary.com/dqjnzfsp6/image/upload/v1686012371/logoJoa-_hbupyw.png"
                         alt="My Logo"
                       />
                     </div>
