@@ -13,8 +13,14 @@
 
 /*** component Home ***/
 
-.my-name {
+.title-my-name {
   text-shadow: 5px 3px 3px #334155; /* Slate 700 */
+}
+
+/*** component About ***/
+
+.title-about {
+  text-shadow: 5px 3px 3px #155e75; /* Slate 700 */
 }
 
 
