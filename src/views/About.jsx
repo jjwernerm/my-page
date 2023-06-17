@@ -1,12 +1,8 @@
-import Skills from '../components/Skills';
-
-function About() {
+export default function About() {
 
   return (
     <>
-      <Skills />
+      
     </>
   )
 }
-
-export default About;

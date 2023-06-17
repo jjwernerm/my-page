@@ -7,7 +7,7 @@ const skillsData = [
   { tecnology: 'NODE', percentage: 20 }
 ];
 
-function Skills() {
+export default function Skills() {
 
   return (
     <>
@@ -27,5 +27,3 @@ function Skills() {
     </>
   )
 }
-
-export default Skills;
