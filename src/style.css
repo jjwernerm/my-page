@@ -1,14 +1,28 @@
-.min-h-navbar {
-  min-height: 7vh;
-}
+/** Colores
+#FFFFFF white
+#D1D5DB gray-300
+#1F2937 gray-800
+#334155 slate-700
+#155e75 cyan-800
 
-.min-h-views {
-  min-height: 67vh;
+/*** *** *** *** *** *** *** *** *** ***/
+
+body {
   background-color: #1F2937; /* Gray 800 */
 }
 
+/*** *** *** *** *** *** *** *** *** ***/
+
+.min-h-navbar {
+  min-height: 10vh;
+}
+
+.min-h-views {
+  min-height: 60vh;
+}
+
 .min-h-footer {
-  min-height: 26vh;
+  min-height: 30vh;
 }
 
 /*** component Home ***/
@@ -20,7 +34,7 @@
 /*** component About ***/
 
 .title-about {
-  text-shadow: 5px 3px 3px #155e75; /* Slate 700 */
+  text-shadow: 5px 3px 3px #155e75; /* Cyan 800 */
 }
 
 
