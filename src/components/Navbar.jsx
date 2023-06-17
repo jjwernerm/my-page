@@ -22,7 +22,7 @@ const navigation = [
   { 
     icon: <FontAwesomeIcon icon={faUser} />, 
     gap: ' ', 
-    name: 'Sobre Mí', 
+    name: 'Sobre mí', 
     href: '/About', 
     current: false
   },
