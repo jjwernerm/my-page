@@ -13,7 +13,7 @@ export default function Skill() {
     <>
       <div>
         <p className="text-white p-5 tracking-widest text-base sm:text-2xl">Habilidades</p>
-        <div className="text-gray-300 p-2">
+        <div className="text-gray-300 p-5 text-xs sm:text-base">
           <div className="space-y-4">
             {skillsData.map((skill) => (
               <div 

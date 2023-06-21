@@ -64,8 +64,8 @@ export default function Navbar() {
   
   return (
     <>
-      <div className="min-h-navbar">
-        <Disclosure as="nav" className="bg-gray-800">
+      <div className="flex justify-center">
+        <Disclosure as="nav" className="bg-slate-700 w-4/5 rounded-lg">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -85,8 +85,8 @@ export default function Navbar() {
                             key={item.name}
                             to={item.href}
                             className={classNames(
-                              item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'block rounded-md px-3 py-2 text-base font-medium'
+                              item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-800 hover:text-white',
+                              'block rounded-md px-3 py-2 text-xs lg:text-base font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >

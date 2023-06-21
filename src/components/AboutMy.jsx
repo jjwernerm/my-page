@@ -4,7 +4,7 @@ export default function AboutMy() {
     <>
       <div>
         <p className="text-white p-2 font-bold text-2xl sm:text-5xl title-about-my">Sobre mí</p>
-        <div className="text-gray-300 p-2">
+        <div className="text-gray-300 p-5">
           <p>
             Hola, soy Joanny Werner, un desarrollador web apasionado por crear proyectos de diseño  que mejore la experiencia del usuario en su actividad diaria.
           </p>

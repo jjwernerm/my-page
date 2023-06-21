@@ -1,21 +1,24 @@
 /** Colores
 #FFFFFF white
 #D1D5DB gray-300
-#1F2937 gray-800
+#1F2937 gray-800 este es el fondo
 #334155 slate-700
 #155e75 cyan-800
 
 /*** *** *** *** *** *** *** *** *** ***/
 
-body {
-  background-color: #1F2937; /* Gray 800 */
+body {  
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/dqjnzfsp6/image/upload/v1687025270/bgTechnology_ixu2dr.png');
+}
+
+.bg-color {
+  background-color: rgba(31, 41, 55, .9);
 }
 
 /*** *** *** *** *** *** *** *** *** ***/
-
-.min-h-navbar {
-  min-height: 10vh;
-}
 
 .min-h-views {
   min-height: 60vh;
@@ -36,5 +39,3 @@ body {
 .title-about-my {
   text-shadow: 3px 3px 1px #155e75; /* Cyan 800 */
 }
-
-
