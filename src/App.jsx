@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import Context from './Context';
+
 import { 
   BrowserRouter,
   Routes, 
@@ -14,18 +17,24 @@ import './style.css'
 
 function App() {
 
+  const [name, setName] = useState("");
+  const contactName = { name, setName };
+
   return (
     <>
-    <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Blog" element={<Blog />} />
-        </Routes>
-      <Footer />
-    </BrowserRouter>
+    <Context.Provider
+      value={contactName}>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Portfolio" element={<Portfolio />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Blog" element={<Blog />} />
+          </Routes>
+        <Footer />
+      </BrowserRouter>
+    </Context.Provider>
     </>
   )
 }

@@ -1,11 +1,16 @@
 import { useState } from "react";//Importo y utilizo el hook useState de React para declarar múltiples estados.
 
+import { useContext } from 'react';
+import Context from '../Context';
+
 import Navbar from '../components/Navbar';
+import ErrorContact from '../modals/ErrorContact';
+import SentContact from '../modals/SentContact';
 
 export default function Contact() {
 
   //Declaro los estado 'name', 'email' y 'comment' utilizando el hook useSate, cada estado lo inicializo con un valor vacío ("") y proporciono una función para actualizar el estado: 'setName', 'setEmail' y 'setComment'
-  const [name, setName] = useState("");
+  const { name, setName } = useContext(Context);
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
   
@@ -56,19 +61,21 @@ export default function Contact() {
 
         //Dentro del bloque try, verifico if (response.ok) para comprobar si la respuesta del servidor fue exitosa. Si es así, significa que el formulario se envió correctamente y se ejecutan las siguientes instrucciones:
         if (response.ok) {
-          setMessageOk("Gracias por escribirme, pronto nos conoceremos.");
+          setMessageOk("envía a SentContact.jsx");
           setName("");
           setEmail("");
           setComment("");
         } else { //significa que ocurrió un error en el envío del formulario y se ejecutan las siguientes instrucciones:
           // Opcional: Manejar errores en el envío del formulario
-          setMessageError("Ha ocurrido un error. Por favor, inténtalo de nuevo más tarde.");
-          setMessageEmail("Si el error cntinúa escribe un correo a joannywerner@gmail.com");
+          setMessageError("envía a ErrorContact.jsx");
+          // setMessageError("Ha ocurrido un error. Por favor, inténtalo de nuevo más tarde.");
+          // setMessageEmail("Si el error continúa escribe un correo a joannywerner@gmail.com");
         }
       } catch (error) {
         // Opcional: Manejar errores en el envío del formulario
-        setMessageError("Ha ocurrido un error. Por favor, inténtalo de nuevo más tarde.");
-        setMessageEmail("Si el error cntinúa escribe un correo a joannywerner@gmail.com");
+          setMessageError("envía a ErrorContact.jsx");
+          // setMessageError("Ha ocurrido un error. Por favor, inténtalo de nuevo más tarde.");
+          // setMessageEmail("Si el error continúa escribe un correo a joannywerner@gmail.com");
       }
     }
   };
@@ -176,9 +183,11 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  {messageOk && (<p className="bg-gray-300 text-green-600 font-bold text-center mt-5 p-2 rounded">{messageOk}</p>)}
-                  {messageError && (<p className="text-red-500 text-center mt-5 rounded">{messageError}</p>)}
-                  {messageEmail && (<p className="text-gray-300 text-center rounded">{messageEmail}</p>)}
+                  {/* {messageOk && (<p className="bg-gray-300 text-green-600 font-bold text-center mt-5 p-2 rounded">{messageOk}</p>)} */}
+                  {messageOk && <SentContact />}
+                  {/* {messageError && (<p className="text-red-500 text-center mt-5 rounded">{messageError}</p>)} */}
+                  {/* {messageEmail && (<p className="text-gray-300 text-center rounded">{messageEmail}</p>)} */}
+                  {messageError && <ErrorContact />}
                   {/* 
                       Mediante esta expresión de JS:
                       1. accedo a la propiedad 'messageOk', 'messageError' y 'messageEmail'
