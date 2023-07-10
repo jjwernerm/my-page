@@ -9,7 +9,7 @@ import {
 import Footer from './components/Footer';
 import Home from './views/Home';
 import About from './views/About';
-import Portfolio from './views/Portfolio';
+import Challenges from './views/Challenges';
 import Contact from './views/Contact';
 import Blog from './views/Blog';
 
@@ -28,7 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
-            <Route path="/Portfolio" element={<Portfolio />} />
+            <Route path="/Challenges" element={<Challenges />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Blog" element={<Blog />} />
           </Routes>

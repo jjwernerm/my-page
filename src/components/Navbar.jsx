@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseChimney, faUser, faSuitcase, faEnvelope, faBlog, faClipboard } from '@fortawesome/free-solid-svg-icons';
+import { faHouseChimney, faUser, faBook, faEnvelope, faBlog, faClipboard } from '@fortawesome/free-solid-svg-icons';
 
 const user = {
   name: 'Joanny Werner',
@@ -22,15 +22,15 @@ const navigation = [
   { 
     icon: <FontAwesomeIcon icon={faUser} />, 
     gap: ' ', 
-    name: 'Sobre mí', 
+    name: 'Joa', 
     href: '/About', 
     current: false
   },
   { 
-    icon: <FontAwesomeIcon icon={faSuitcase} />, 
+    icon: <FontAwesomeIcon icon={faBook} />, 
     gap: ' ', 
-    name: 'Portafolio', 
-    href: '/Portfolio', 
+    name: 'Challenges', 
+    href: '/Challenges', 
     current: false
   },
   { 
