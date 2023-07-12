@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Context from './Context';
 
 import { 
+  HashRouter,
   BrowserRouter,
   Routes, 
   Route } from "react-router-dom";

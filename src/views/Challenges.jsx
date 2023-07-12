@@ -44,7 +44,7 @@ export default function Challenges() {
 
             {challengesArray.map((a) => (
 
-              <a key={a.key} href={a.href} target="_blank">
+              <a key={a.title} href={a.href} target="_blank">
                 <div className="bg-slate-700 rounded-xl p-8 m-8 md:flex">
                   
                   <img
