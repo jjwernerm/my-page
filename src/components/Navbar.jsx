@@ -123,17 +123,18 @@ export default function Navbar() {
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
-                                  <a
-                                    href={item.href}
+                                  <NavLink
+                                    to={item.href}
                                     className={classNames(
                                       active ? 'bg-gray-100' : '',
                                       'block px-4 py-2 text-sm text-gray-700'
                                     )}
-                                    target="_blank">
+                                    // target="_blank"
+                                  >
                                     {item.icon}
                                     {item.gap}
                                     {item.name}
-                                  </a>
+                                  </NavLink>
                                 )}
                               </Menu.Item>
                             ))}
@@ -161,10 +162,10 @@ export default function Navbar() {
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <NavLink
                       key={item.name}
                       as="a"
-                      href={item.href}
+                      to={item.href}
                       className={classNames(
                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                         'block rounded-md px-3 py-2 text-base font-medium'
@@ -174,7 +175,7 @@ export default function Navbar() {
                       {item.icon}
                       {item.gap}
                       {item.name}
-                    </Disclosure.Button>
+                    </NavLink>
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
@@ -189,16 +190,17 @@ export default function Navbar() {
                   </div>
                   <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (
-                      <Disclosure.Button
+                      <NavLink
                         key={item.name}
                         as="a"
-                        href={item.href}
+                        to={item.href}
                         className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
-                        target="_blank">
+                        // target="_blank"
+                      >
                         {item.icon}
                         {item.gap}
                         {item.name}
-                      </Disclosure.Button>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
