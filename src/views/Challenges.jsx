@@ -2,28 +2,36 @@ import Navbar from '../components/Navbar';
 
 const challengesArray = [
   { 
-    title: 'Props',
-    section: 'Ejemplo de props con ReactJS',
-    date: '07/2022',
-    alt:'React logo',
-    href: '/',
-    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'    
+    title: 'Validar Campos',
+    section: 'Ejemplo de validar campos con JavaScript',
+    date: '31/2023',
+    alt:'JavaScript logo',
+    href: 'https://aquamarine-truffle-dcc5e2.netlify.app/',
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
   { 
-    title: 'Condiciones',
-    section: 'Ejemplo de condiciones con JavaScript',
-    date: '06/2022',
+    title: 'Pronto un nuevo repositorio...',
+    section: ':)',
+    date: 'Date',
     alt:'JavaScript logo',
     href: '/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
   { 
-    title: 'Flexbox',
-    section: 'Ejemplo de flexbox con CSS',
-    date: '04/2022',
+    title: 'Pronto un nuevo repositorio...',
+    section: ':)',
+    date: 'Date',
     alt:'CSS logo',
     href: '/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029553/logoCSS_rync5p.png'
+  },
+  { 
+    title: 'Pronto un nuevo repositorio...',
+    section: ':)',
+    date: 'Date',
+    alt:'React logo',
+    href: '/',
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'    
   }
 ];
 
