@@ -11,7 +11,7 @@ const challengesArray = [
   },
   { 
     title: 'Carrito de Compras',
-    section: 'Sigo divirtiéndome en este repositorio, mientras tanto puedes mirar como va...',
+    section: 'Sigo divirtiéndome con el repositorio, mira como va...',
     github: 'https://github.com/jjwernerm/carritoCompras',
     alt:'JavaScript logo',
     href: 'https://precious-cheesecake-93e196.netlify.app/',
