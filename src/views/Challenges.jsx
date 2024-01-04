@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar';
 const challengesArray = [
   { 
     title: 'Validar Campos',
-    section: 'Ejemplo de validar campos con JavaScript',
-    date: '31/2023',
+    section: 'Ejemplo para validar campos con JavaScript',
+    github: 'https://github.com/jjwernerm/validarCampos',
     alt:'JavaScript logo',
     href: 'https://aquamarine-truffle-dcc5e2.netlify.app/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
@@ -12,23 +12,23 @@ const challengesArray = [
   { 
     title: 'Pronto un nuevo repositorio...',
     section: ':)',
-    date: 'Date',
+    github: 'Date',
     alt:'JavaScript logo',
     href: '/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
   { 
     title: 'Pronto un nuevo repositorio...',
-    section: ':)',
-    date: 'Date',
+    section: '',
+    github: '',
     alt:'CSS logo',
     href: '/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029553/logoCSS_rync5p.png'
   },
   { 
     title: 'Pronto un nuevo repositorio...',
-    section: ':)',
-    date: 'Date',
+    section: '',
+    github: '',
     alt:'React logo',
     href: '/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'    
@@ -75,10 +75,10 @@ export default function Challenges() {
                     </blockquote>
                     
                     <figcaption className="font-medium">                
-                      <div
+                      <p
                         className="text-slate-700 dark:text-slate-500">
-                        {a.date}
-                      </div>
+                        {a.github}
+                      </p>
                     </figcaption>
                   </div>
 
