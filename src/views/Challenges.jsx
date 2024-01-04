@@ -10,29 +10,21 @@ const challengesArray = [
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
   { 
-    title: 'Pronto un nuevo repositorio...',
-    section: ':)',
-    github: 'Date',
+    title: 'Carrito de Compras',
+    section: 'Sigo divirtiéndome en este repositorio, mientras tanto puedes mirar como va...',
+    github: 'https://github.com/jjwernerm/carritoCompras',
     alt:'JavaScript logo',
-    href: '/',
+    href: 'https://precious-cheesecake-93e196.netlify.app/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
   { 
-    title: 'Pronto un nuevo repositorio...',
+    title: 'Mi Sitio Web',
     section: '',
-    github: '',
-    alt:'CSS logo',
-    href: '/',
-    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029553/logoCSS_rync5p.png'
-  },
-  { 
-    title: 'Pronto un nuevo repositorio...',
-    section: '',
-    github: '',
+    github: 'https://github.com/jjwernerm/my-page',
     alt:'React logo',
     href: '/',
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'    
-  }
+  },
 ];
 
 export default function Challenges() {
