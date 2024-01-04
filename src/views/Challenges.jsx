@@ -52,7 +52,7 @@ export default function Challenges() {
 
             {challengesArray.map((a) => (
 
-              <a key={a.title} href={a.href} target="_blank">
+              <div key={a.title} href={a.href} target="_blank">
                 <div className="bg-slate-700 rounded-xl p-8 m-8 md:flex">
                   
                   <img
@@ -63,10 +63,11 @@ export default function Challenges() {
                   
                   <div className="pt-6 md:p-8 text-center md:text-left space-y-4">                
                     <blockquote>                  
-                      <div
+                      <a
+                        href={a.href}
                         className="text-cyan-800 dark:text-cyan-600 font-medium">
                         {a.title}
-                      </div>
+                      </a>
 
                       <p
                         className="text-white text-base">
@@ -83,7 +84,7 @@ export default function Challenges() {
                   </div>
 
                 </div>
-              </a>
+              </div>
             ))}
             </div>
             <p className="text-red-600 text-center">Pronto subiré los desafíos y más...</p> 
