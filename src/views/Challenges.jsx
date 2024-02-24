@@ -9,7 +9,7 @@ const challengesArray = [
     hrefTitle: '/',
     iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
 
-    github: 'jjwernerm/my-page',
+    github: 'jjwernerm - Github',
     hrefGithub: 'https://github.com/jjwernerm/my-page',
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
@@ -21,7 +21,7 @@ const challengesArray = [
     hrefTitle: 'https://aquamarine-truffle-dcc5e2.netlify.app/',
     iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
 
-    github: 'jjwernerm/validarCampos',
+    github: 'jjwernerm - Github',
     hrefGithub: 'https://github.com/jjwernerm/validarCampos',
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
@@ -33,7 +33,7 @@ const challengesArray = [
     hrefTitle: 'https://precious-cheesecake-93e196.netlify.app/',
     iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
 
-    github: 'jjwernerm/carritoCompras',
+    github: 'jjwernerm - Github',
     hrefGithub: 'https://github.com/jjwernerm/carritoCompras',
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
@@ -45,7 +45,7 @@ const challengesArray = [
     hrefTitle: 'https://beautiful-pasca-e64be4.netlify.app/',
     iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
 
-    github: 'jjwernerm/filtrarBusqueda',
+    github: 'jjwernerm - Github',
     hrefGithub: 'https://github.com/jjwernerm/filtrarBusqueda',
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
