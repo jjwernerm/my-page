@@ -92,7 +92,7 @@ export default function Challenges() {
                       <a
                         href={a.hrefGithub}
                         target="_blank"
-                        className="text-cyan-800 dark:text-cyan-600 font-medium">
+                        className="text-white">
                         {a.iconGithub} {a.github}
                       </a>
                     </blockquote>
