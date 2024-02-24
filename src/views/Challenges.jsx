@@ -1,29 +1,56 @@
 import Navbar from '../components/Navbar';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpRightFromSquare, faGithub} from '@fortawesome/free-solid-svg-icons';
+
 const challengesArray = [
   { 
+    title: 'Mi Sitio Web',
+    hrefTitle: '/',
+    iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+
+    github: 'jjwernerm/my-page',
+    hrefGithub: 'https://github.com/jjwernerm/my-page',
+    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+
+    alt:'React logo',    
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'
+  },
+  { 
     title: 'Validar Campos',
-    section: 'Ejemplo para validar campos con JavaScript',
-    github: 'https://github.com/jjwernerm/validarCampos',
-    alt:'JavaScript logo',
-    href: 'https://aquamarine-truffle-dcc5e2.netlify.app/',
+    hrefTitle: 'https://aquamarine-truffle-dcc5e2.netlify.app/',
+    iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+
+    github: 'jjwernerm/validarCampos',
+    hrefGithub: 'https://github.com/jjwernerm/validarCampos',
+    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+
+    alt:'JavaScript logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
   { 
     title: 'Carrito de Compras',
-    section: 'Sigo divirtiéndome con el repositorio, mira como va...',
-    github: 'https://github.com/jjwernerm/carritoCompras',
-    alt:'JavaScript logo',
-    href: 'https://precious-cheesecake-93e196.netlify.app/',
+    hrefTitle: 'https://precious-cheesecake-93e196.netlify.app/',
+    iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+
+    github: 'jjwernerm/carritoCompras',
+    hrefGithub: 'https://github.com/jjwernerm/carritoCompras',
+    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+
+    alt:'JavaScript logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
   { 
-    title: 'Mi Sitio Web',
-    section: '',
-    github: 'https://github.com/jjwernerm/my-page',
-    alt:'React logo',
-    href: '/',
-    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'    
+    title: 'Filtrar Búsqueda',
+    hrefTitle: 'https://beautiful-pasca-e64be4.netlify.app/',
+    iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+
+    github: 'jjwernerm/filtrarBusqueda',
+    hrefGithub: 'https://github.com/jjwernerm/filtrarBusqueda',
+    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+
+    alt:'JavaScript logo',    
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
   },
 ];
 
@@ -38,7 +65,7 @@ export default function Challenges() {
             className="text-white title-about-my p-2 text-center font-bold text-2xl sm:text-5xl">Challenges
           </p>
           <p 
-            className="text-white p-2 text-center">Aquí muestro algunos ejemplos y desafíos emergentes que generalmente puedo enfrentar en el campo del desarrollo web.
+            className="text-white p-2 text-center">Aquí muestro mis propios desafíos y proyectos emergentes que generalmente puedo enfrentar en el campo del desarrollo web.
           </p>
           <div className="md:grid md:grid-cols-2">
 
@@ -56,31 +83,26 @@ export default function Challenges() {
                   <div className="pt-6 md:p-8 text-center md:text-left space-y-4">                
                     <blockquote>                  
                       <a
-                        href={a.href}
+                        href={a.hrefTitle}
                         target="_blank"
                         className="text-cyan-800 dark:text-cyan-600 font-medium">
-                        {a.title}
+                        {a.iconTitle} {a.title}
                       </a>
 
-                      <p
-                        className="text-white text-base">
-                        {a.section}
-                      </p>
+                      <a
+                        href={a.hrefGithub}
+                        target="_blank"
+                        className="text-cyan-800 dark:text-cyan-600 font-medium">
+                        {a.iconGithub} {a.github}
+                      </a>
                     </blockquote>
                     
-                    <figcaption className="font-medium">                
-                      <p
-                        className="text-slate-700 dark:text-slate-500">
-                        {a.github}
-                      </p>
-                    </figcaption>
-                  </div>
+                 </div>
 
                 </div>
               </div>
             ))}
             </div>
-            <p className="text-red-600 text-center">Pronto subiré los desafíos y más...</p> 
         </div>
       </div>
     </>
