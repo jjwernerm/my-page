@@ -88,7 +88,7 @@ export default function Challenges() {
                         className="text-cyan-800 dark:text-cyan-600 font-medium">
                         {a.iconTitle} {a.title}
                       </a>
-
+                      <br />
                       <a
                         href={a.hrefGithub}
                         target="_blank"
