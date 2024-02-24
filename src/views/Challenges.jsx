@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare, faGithub} from '@fortawesome/free-solid-svg-icons';
+import { faUpRightFromSquare, faCodeBranch} from '@fortawesome/free-solid-svg-icons';
 
 const challengesArray = [
   { 
@@ -11,7 +11,7 @@ const challengesArray = [
 
     github: 'jjwernerm/my-page',
     hrefGithub: 'https://github.com/jjwernerm/my-page',
-    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+    iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'React logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'
@@ -23,7 +23,7 @@ const challengesArray = [
 
     github: 'jjwernerm/validarCampos',
     hrefGithub: 'https://github.com/jjwernerm/validarCampos',
-    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+    iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'JavaScript logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
@@ -35,7 +35,7 @@ const challengesArray = [
 
     github: 'jjwernerm/carritoCompras',
     hrefGithub: 'https://github.com/jjwernerm/carritoCompras',
-    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+    iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'JavaScript logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
@@ -47,7 +47,7 @@ const challengesArray = [
 
     github: 'jjwernerm/filtrarBusqueda',
     hrefGithub: 'https://github.com/jjwernerm/filtrarBusqueda',
-    iconGithub: <FontAwesomeIcon icon={faGithub} />,
+    iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'JavaScript logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
