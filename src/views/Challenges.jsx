@@ -14,7 +14,9 @@ const challengesArray = [
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'React logo',    
-    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png'
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689028931/logoReact_oy8gr9.png',
+
+    pText: '',
   },
   { 
     title: 'Validar Campos',
@@ -26,7 +28,9 @@ const challengesArray = [
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'JavaScript logo',    
-    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png',
+
+    pText: '',
   },
   { 
     title: 'Carrito de Compras',
@@ -38,7 +42,9 @@ const challengesArray = [
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'JavaScript logo',    
-    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png',
+
+    pText: '',
   },
   { 
     title: 'Filtrar Búsqueda',
@@ -50,7 +56,9 @@ const challengesArray = [
     iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
 
     alt:'JavaScript logo',    
-    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png'
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png',
+
+    pText: 'Proyecto en desarrollo...',
   },
 ];
 
@@ -73,8 +81,6 @@ export default function Challenges() {
 
               <div key={a.title}>
                 <div className="bg-slate-700 rounded-xl p-8 m-8 md:flex">
-
-                  <p class="italic text-red text-center">Proyecto en desarrollo...</p>
                   
                   <img
                     className="w-12 h-12 mx-auto rounded-full md:w-24 md:h-24 md:mx-0 md:my-auto md:rounded-none" 
@@ -98,6 +104,7 @@ export default function Challenges() {
                         className="text-white">
                         {a.iconGithub} {a.github}
                       </a>
+                      <p class="italic text-red-700 text-center">{a.pText}</p>
                     </blockquote>                    
                  </div>
 
