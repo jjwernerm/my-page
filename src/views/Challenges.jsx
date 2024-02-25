@@ -73,6 +73,8 @@ export default function Challenges() {
 
               <div key={a.title}>
                 <div className="bg-slate-700 rounded-xl p-8 m-8 md:flex">
+
+                  <p class="italic text-red text-center">Proyecto en desarrollo...</p>
                   
                   <img
                     className="w-12 h-12 mx-auto rounded-full md:w-24 md:h-24 md:mx-0 md:my-auto md:rounded-none" 
@@ -89,14 +91,14 @@ export default function Challenges() {
                         {a.iconTitle} {a.title}
                       </a>
                       <br />
+                      <br />
                       <a
                         href={a.hrefGithub}
                         target="_blank"
                         className="text-white">
                         {a.iconGithub} {a.github}
                       </a>
-                    </blockquote>
-                    
+                    </blockquote>                    
                  </div>
 
                 </div>
