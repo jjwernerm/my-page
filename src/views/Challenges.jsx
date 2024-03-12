@@ -58,7 +58,21 @@ const challengesArray = [
     alt:'JavaScript logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png',
 
-    pText: 'Proyecto en desarrollo...',
+    pText: '',
+  },
+  { 
+    title: 'JavaScript',
+    hrefTitle: '#',
+    iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+
+    github: 'jjwernerm - Github',
+    hrefGithub: '#',
+    iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
+
+    alt:'JavaScript logo',    
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png',
+
+    pText: 'Pronto empezaré otro proyecto',
   },
 ];
 
@@ -104,7 +118,7 @@ export default function Challenges() {
                         className="text-white">
                         {a.iconGithub} {a.github}
                       </a>
-                      <p class="italic text-red-700 text-center">{a.pText}</p>
+                      <p class="italic text-yellow-500 text-center">{a.pText}</p>
                     </blockquote>                    
                  </div>
 
