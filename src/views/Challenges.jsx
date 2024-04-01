@@ -61,6 +61,20 @@ const challengesArray = [
     pText: '',
   },
   { 
+    title: 'Invitados con Class',
+    hrefTitle: 'https://subtle-biscuit-28f7b2.netlify.app/',
+    iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
+
+    github: 'jjwernerm - Github',
+    hrefGithub: 'https://github.com/jjwernerm/invitadosClass',
+    iconGithub: <FontAwesomeIcon icon={faCodeBranch} />,
+
+    alt:'JavaScript logo',    
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png',
+
+    pText: 'Proyecto en desarrollo...',
+  },
+  { 
     title: 'JavaScript',
     hrefTitle: '#',
     iconTitle: <FontAwesomeIcon icon={faUpRightFromSquare} />,
