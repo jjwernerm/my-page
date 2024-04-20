@@ -72,7 +72,7 @@ const challengesArray = [
     alt:'JavaScript logo',    
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/v1689029337/logoJS_n0phoq.png',
 
-    pText: 'Proyecto en desarrollo...',
+    pText: '',
   },
   { 
     title: 'JavaScript',
